@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Compare image and base64 encoded image size.</title>
+    <link rel="stylesheet" href="bower_components/bootstrap.css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap.css/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <a class="brand" href="#">Think about base64 encoded image size.</a>
+        </div>
+    </div>
+    <div class="container">
+        <div id="drop_zone" class="well radius">
+            <noscript>JavaScript must be enabled to use the drop zone.</noscript>
+            <h1 id="caption">Drop Here!</h1>
+            <table id="result" class="table">
+                <thead>
+                    <tr>
+                        <th colspan="3" width="50%">base64 Strings</th>
+                        <th colspan="3" width="50%">image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2"><span class="label label-warning">DateURI Size</span> <span id="dataURISize"></span>KB (<span id="up"></span>%UP!)</td>
+                        <td colspan="2"><i class="icon-forward"></i></td>
+                        <td colspan="2"><span class="label label-info">Original Size</span> <span id="originalSize"></span>KB</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" width="50%">
+                            <textarea id="textarea" rows="15" style="width: 100%"></textarea>
+                        </td>
+                        <td colspan="3" width="50%">
+                            <img id="image" class="img-polaroid">
+                            <p style="margin: 10px"><span id="name" class="label"></span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="attention">Drag and drop an image from your computer.</p>
+        </div>
+    </div>
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "compare-image-and-base64-encoded-image-size",
+  "version": "0.0.0",
+  "homepage": "https://github.com/HAKASHUN/compare-image-and-base64-encoded-image-size",
+  "authors": [
+    "HAKASHUN"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.0.3",
+    "bootstrap.css": "~2.3.2"
+  }
+}
